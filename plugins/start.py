@@ -5,11 +5,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @Client.on_message(filters.private & filters.command(["start"]) & filters.incoming)
 async def start(client, message):
     btn = [[
-        InlineKeyboardButton('Updates Channel', url='https://t.me/SL_Bots_Updates'),
-        InlineKeyboardButton('Support Group', url='https://t.me/SL_Bots_Support')
+        InlineKeyboardButton('Updates Channel', url='https://t.me/TomenBots'),
+        InlineKeyboardButton('Support Group', url='https://t.me/TomenSupport')
     ],[
         InlineKeyboardButton('Repo', url='https://github.com/Hansaka-Anuhas/ForwardBot'),
-        InlineKeyboardButton('Developer', url='https://t.me/Hansaka_Anuhas')
+        InlineKeyboardButton('Developer', url='https://t.me/KingOfFondness')
     ]]
     text = """I can forward document and video (mp4 and mkv) files.
 
