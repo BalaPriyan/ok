@@ -15,6 +15,6 @@ async def not_owner(bot, message):
     btn = [[
         InlineKeyboardButton('Repo', url='https://github.com/Hansaka-Anuhas/ForwardBot')
     ],[
-        InlineKeyboardButton('Developer', url='https://t.me/Hansaka_Anuhas')
+        InlineKeyboardButton('Developer', url='https://t.me/KingOfFondness')
     ]]
     await message.reply("You can't access this bot, Create your own bot.", reply_markup=InlineKeyboardMarkup(btn))
