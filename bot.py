@@ -1,8 +1,8 @@
 import logging
-import logging.config
+from logging import StreamHandler, Formatter
+import sys
 
-# Get logging configurations
-logging.config.fileConfig('logging.conf')
+logging.basicConfig(level=logging.INFO, handlers=[StreamHandler(sys.stdout)], format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
