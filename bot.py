@@ -81,4 +81,21 @@ class Bot(Client):
 
 
 app = Bot()
+
+flask_app = Flask(__name__)
+
+# Route to serve the index.html file
+@flask_app.route('/')
+def serve_html():
+    return send_file('index.html')
+
+# Run Flask in a separate thread
+import threading
+
+def run_flask():
+    flask_app.run(host='0.0.0.0', port=8080)  # Replace with your preferred host and port
+
+flask_thread = threading.Thread(target=run_flask)
+flask_thread.start()
+
 app.run()
