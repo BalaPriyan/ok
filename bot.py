@@ -13,7 +13,6 @@ from info import API_ID, API_HASH, BOT_TOKEN
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from info import OWNER
-from Fri import Index
 
 
 
